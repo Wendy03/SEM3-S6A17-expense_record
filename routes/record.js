@@ -62,7 +62,6 @@ router.put('/:id', authenticated, formCheck, (req, res) => {
       let errorMessages = []
       for (let i = 0; i < errors.array().length; i++) {
         errorMessages.push({ message: errors.array()[i]['msg'] })
-        console.log(errorMessages)
       } res.render('edit', {
         record,
         errorMessages,
