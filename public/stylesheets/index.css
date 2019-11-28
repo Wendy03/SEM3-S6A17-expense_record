@@ -75,3 +75,7 @@ input[type=text] {
 input[type=number] {
   color: #FF0000;
 }
+
+.edit-title {
+  color: #FF4500;
+}

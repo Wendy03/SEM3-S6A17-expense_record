@@ -65,7 +65,8 @@ router.put('/:id', authenticated, formCheck, (req, res) => {
         console.log(errorMessages)
       } res.render('edit', {
         record,
-        errorMessages
+        errorMessages,
+        style: 'index.css'
       })
     } else {
       Object.assign(record, req.body)

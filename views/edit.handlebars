@@ -4,7 +4,7 @@
       <div class="card card-body border-0">
         <div class="row my-5">
           <span class="text-danger col-2 text-right">*必填欄位</span>
-          <h1 class="col-8 text-center">請修改你的支出</h1>
+          <h1 class="col-8 text-center edit-title">請修改你的支出</h1>
         </div>
         {{> messages }}
         <form action="/record/{{record.id}}?_method=PUT" method="POST">
@@ -30,7 +30,7 @@
             <div class="col-8">
               <input type="date" class="form-control" name="date" id="date" value="{{ dateFormat record.date}}"
                 maxlength="10" required>
-              <span class="warning-block ml-2">日期區間:2019.1.1~2019.12.31</span>
+              <span class="warning-block ml-2">日期區間: 2019. 1. 1~2019. 12. 31</span>
             </div>
           </div>
           <!-- category -->

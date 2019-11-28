@@ -24,10 +24,9 @@ const formCheck = [
     .isLength({ min: 1, max: 10 })
     .withMessage('名稱為必填'),
   check('date')
-    .isISO8601()
-    .isAfter('2018-12-31')
-    .isBefore('2020-01-01')
-    .withMessage('日期格式不符'),
+    .isISO8601().withMessage('日期格式不符')
+    .isAfter('2018-12-31').withMessage('日期區間:2019.1.1 ~2019.12.31')
+    .isBefore('2020-01-01').withMessage('日期區間:2019.1.1 ~2019.12.31'),
   check('category')
     .not().isEmpty().withMessage('請選分類選擇好'),
   check('amount')
