@@ -1,0 +1,77 @@
+.navbar-brand {
+  color: #FFFFFF;
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+.button {
+  background-color: #FFFFFF;
+}
+
+.fa-home {
+  color: #FF4500;
+}
+
+.fa-pen {
+  color: #00008B;
+}
+
+.fa-utensils {
+  color: #4592af;
+}
+
+.fa-grin-beam {
+  color: #FFD700;
+}
+
+.date {
+  font-size: 0.7rem;
+  color: #888888;
+}
+
+.modal-dialog {
+  margin-top: 150px;
+  width: 450px;
+}
+
+.modal-header {
+  background-color: #DDDDDD;
+}
+
+.modal-title {
+  font-weight: 900;
+  font-family: DFKai-sb
+}
+
+.modal-body {
+  font-family: fantasy
+}
+
+.modal-footer {
+  border-top: none;
+}
+
+.fa-chevron-circle-up {
+  font-size: 50px;
+  float: right;
+  color: #DDDDDD;
+  bottom: 20px;
+}
+
+
+.fa-chevron-circle-up:hover {
+  color: #000000;
+}
+
+.warning-block {
+  font-size: 0.7rem;
+  color: #888888;
+}
+
+input[type=text] {
+  color: #0000AA;
+}
+
+input[type=number] {
+  color: #FF0000;
+}
