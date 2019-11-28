@@ -39,7 +39,10 @@ app.use(methodOverride('_method'))
 app.use(bodyParser.urlencoded({ extended: true }))
 
 // 設定連線到 mongoDB
-mongoose.connect('mongodb://localhost/record', { useNewUrlParser: true })
+mongoose.connect(process.env.MONGODB_URI || 'mongodb://localhost/record', {
+  useNewUrlParser: true,
+  useCreateIndex: true
+})
 const db = mongoose.connection
 
 //連線異常
@@ -87,6 +90,6 @@ app.use('/record', require('./routes/record.js'))
 app.use('/users', require('./routes/user'))
 app.use('/auth', require('./routes/auths'))
 
-app.listen(port, () => {
+app.listen(process.env.PORT || port, () => {
   console.log(`Express is listening on http://localhost:${port}`)
 })
