@@ -1,0 +1,51 @@
+{
+  "records": [{
+      "name": "午餐",
+      "date": "2019-04-23",
+      "category": "food",
+      "amount": "60"
+    },
+    {
+      "name": "公車",
+      "date": "2019-04-23",
+      "category": "traffic",
+      "amount": "15"
+    },
+    {
+      "name": "電影",
+      "date": "2019-04-23",
+      "category": "entertainment",
+      "amount": "220"
+    },
+    {
+      "name": "租金",
+      "date": "2019-04-23",
+      "category": "living",
+      "amount": "25000"
+    },
+    {
+      "name": "火車",
+      "date": "2019-11-25",
+      "category": "traffic",
+      "amount": "300"
+    },
+    {
+      "name": "晚餐",
+      "date": "2019-11-25",
+      "category": "food",
+      "amount": "60"
+    },
+    {
+      "name": "學費",
+      "date": "2019-11-25",
+      "category": "other",
+      "amount": "2100"
+    },
+    {
+      "name": "小說",
+      "date": "2019-11-25",
+      "category": "other",
+      "amount": "200"
+    }
+  ]
+}
