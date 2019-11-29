@@ -4,6 +4,10 @@
   font-weight: 600;
 }
 
+.navbar-brand:hover {
+  color: #AAAAAA;
+}
+
 .button {
   background-color: #FFFFFF;
 }

@@ -41,7 +41,7 @@ router.get('/', authenticated, (req, res) => {
 
   Record
     .find(querySelect)
-    .sort({ date: 1 })
+    .sort({ date: - 1 })
     .exec((err, records) => {
       if (err) return console.error(err)
 
