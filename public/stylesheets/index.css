@@ -60,6 +60,7 @@
   float: right;
   color: #DDDDDD;
   bottom: 20px;
+  position: relative;
 }
 
 
@@ -81,7 +82,11 @@ input[type=number] {
 }
 
 .edit-title {
-  color: #FF4500;
+  color: #E63F00;
+}
+
+.new-title {
+  color: #0000AA;
 }
 
 .add {
