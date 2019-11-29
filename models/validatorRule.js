@@ -28,7 +28,7 @@ const formCheck = [
     .isAfter('2018-12-31').withMessage('日期區間:2019.1.1 ~2019.12.31')
     .isBefore('2020-01-01').withMessage('日期區間:2019.1.1 ~2019.12.31'),
   check('category')
-    .not().isEmpty().withMessage('請選分類選擇好'),
+    .not().isEmpty().withMessage('請選分類'),
   check('amount')
     .trim()
     .isInt({ min: 1, max: 999999 })
