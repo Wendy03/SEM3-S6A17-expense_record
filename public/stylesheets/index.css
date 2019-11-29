@@ -79,3 +79,9 @@ input[type=number] {
 .edit-title {
   color: #FF4500;
 }
+
+.add {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
