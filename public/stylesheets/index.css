@@ -128,7 +128,7 @@ td {
 }
 
 
-@media screen and (max-width:425px) {
+@media screen and (max-width:768px) {
 
   .add {
     position: fixed;
@@ -177,7 +177,7 @@ td {
   .add {
     position: fixed;
     bottom: 0;
-    width: 90%;
+    width: 80%;
   }
 
   #select-month,
@@ -186,11 +186,7 @@ td {
   }
 
   h1 {
-    font-size: 1.4rem;
-  }
-
-  h4 {
-    font-size: 1rem;
+    font-size: 1.5rem;
   }
 
   #edit-btn,
