@@ -2,7 +2,7 @@
 
   <div class="justify-content-center row mt-5">
 
-    <div class="my-5 mr-5">
+    <div id="select-month">
       <div class="btn-group dropright mr-5">
         <button type="button" class="btn btn-outline-secondary dropdown-toggle monthDropdownBtn" data-toggle="dropdown"
           aria-haspopup="true" aria-expanded="false" data-item="{{filterMonth}}">
@@ -30,7 +30,7 @@
       </div>
     </div>
 
-    <div class="my-5 ml-5">
+    <div id="select-category">
       <div class="btn-group dropright ml-5">
         <button type="button" class="btn btn-outline-secondary dropdown-toggle ml-2 categoryDropdownBtn"
           data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" data-item="{{filterCategory}}">
@@ -51,16 +51,16 @@
       </div>
     </div>
   </div>
-  <div class="col-7 mx-auto">
+  <div class="col-md-7 mx-auto">
 
     <div class=" row mb-5">
       <h4 class="mr-5">總金額:</h4>
       <h1 class="text-danger">{{this.totalAmount}}</h1>
     </div>
 
-    <table class="table table-active">
+    <table class="table table-active mx-auto">
 
-      <tbody class="col-12 m-auto">
+      <tbody class="col-sm-12 col-xs-6 m-auto">
         {{#each records}}
         <tr>
           <th scope="row" class="text-right pt-4">
@@ -79,8 +79,9 @@
             <h4>{{ this.amount }}</h4>
           </td>
           <td class="row pt-4">
-            <a href="record/{{{this.id}}}/edit" class="btn btn-info mr-2">編輯</a>
-            <button type="button" data-toggle="modal" data-target="#delete{{{this.id}}}" class="btn btn-danger">
+            <a href="record/{{{this.id}}}/edit" class="btn btn-info" id="edit-btn">編輯</a>
+            <button type="button" data-toggle="modal" data-target="#delete{{{this.id}}}" class="btn btn-danger"
+              id="delete-btn">
               刪除
             </button>
           </td>
